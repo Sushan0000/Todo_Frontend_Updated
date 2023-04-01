@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #011627;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	padding: 25px;
+	color: #a5c5e9;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+i {
+	pointer-events: none;
+}
+
+.form-container {
+	width: 50%;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+}
+
+.form-container input {
+	width: 500px;
+	background: none;
+	outline: none;
+	border: 1px solid #ffb042;
+	border-radius: 10px;
+	padding: 10px 10px;
+	font-size: 1rem;
+	color: #ffb042;
+}
+
+.form-container input:hover {
+	box-shadow: 0 0 25px #ffb042;
+	transition: 0.5s;
+}
+
+.material-symbols-rounded {
+	font-size: 100px;
+}
+
+.form-container button {
+	background: none;
+	outline: none;
+	border: none;
+	padding: 10px;
+	font-size: 2rem;
+	color: #ffb042;
+	cursor: pointer;
+}
+
+.form-container button:hover {
+	text-shadow: 0 0 25px #ffb042;
+	transition: 0.5s;
+}
+
+.todo-Tasks {
+	width: 50%;
+	list-style: none;
+}
+
+.todo {
+	width: 75%;
+	margin: 10px auto;
+	color: #010204;
+	background-color: #ffb042;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.todo span {
+	text-align: left;
+	padding-left: 25px;
+	width: 100%;
+}
+
+.check,
+.trash {
+	cursor: pointer;
+	padding: 5px;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 1.5rem;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+
+.check:hover {
+	color: #49a078;
+	text-shadow: 0px 0px 25px #32908f;
+	transition: none;
+}
+
+.trash:hover {
+	color: #e71d36;
+	text-shadow: 0px 0px 25px #ef798a;
+}
+
+.completed {
+	opacity: 0.5;
+	text-decoration: line-through;
+	transition: all 0.3s ease;
+}
