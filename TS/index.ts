@@ -14,7 +14,7 @@ taskInput.disabled = true;
 todos
 	.getTasks()
 	.then((tasks: Array<Task>) => {
-		tasks.forEach((task) => {
+		tasks.forEach(task => {
 			renderTask(task);
 		});
 		taskInput.disabled = false;
@@ -23,7 +23,7 @@ todos
 		alert(error);
 	});
 
-addButton.addEventListener("click", (event) => {
+addButton.addEventListener("click", event => {
 	const text = taskInput.value.trim();
 	if (text === "") {
 		alert("Enter Task First");
